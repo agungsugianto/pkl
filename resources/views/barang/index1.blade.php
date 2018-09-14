@@ -27,6 +27,7 @@ http://www.templatemo.com/tm-495-metro-fit
 
     <body>
         <!-- Header gallery -->
+        <h1 class="center">Aksesoris Handphone</h1><br>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
