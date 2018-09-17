@@ -1,107 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>SecurityGroup</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" media="screen" href="{{asset('aset/css/reset.css')}}">
-<link rel="stylesheet" type="text/css" media="screen" href="{{asset('aset/css/style.css')}}">
-<script src="{{asset('aset/js/jquery-1.7.min.js')}}"></script>
-<script src="{{asset('aset/js/jquery.easing.1.3.js')}}"></script>
-<script src="{{asset('aset/js/FF-cash.js')}}"></script>
-<!--[if lt IE 9]>
-<script src="{{asset('aset/js/html5.js')}}"></script>
-<link rel="stylesheet" type="text/css" media="screen" href="{{asset('aset/css/ie.css')}}">
-<![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aksesoris Handphone </title>
+<!--
+Metro Fit
+http://www.templatemo.com/tm-495-metro-fit
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="{{asset('assett/https://fonts.googleapis.com/css?family=Open+Sans:300,400')}}">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="{{asset('assett/font-awesome-4.5.0/css/font-awesome.min.css')}}">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{asset('assett/css/bootstrap.min.css')}}">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="{{asset('assett/css/magnific-popup.css')}}">                                 <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+    <link rel="stylesheet" href="{{asset('assett/css/templatemo-style.css')}}">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
 </head>
-<body>
-<!--==============================header=================================-->
-<header>
-  <div class="main">
-    <div class="wrap">
-      <h1><a href="index.html"><img src="{{asset('aset/images/logo.png')}}" alt=""></a></h1>
-      <div class="slogan">Clients choose us!</div>
-      <div class="tooltips"> <a href="#"><img src="{{asset('aset/images/icon-1.png')}}" alt=""></a><a href="#"><img src="{{asset('aset/images/icon-2.png')}}" alt=""></a><a href="#"><img src="{{asset('aset/images/icon-3.png')}}" alt=""></a> </div>
-    </div>
-    <div class="nav-shadow">
-      <div>
-        <nav>
-          <ul class="menu">
-            <li class="current"><a href="home">Login</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="employment.html">Employment</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div class="header-content">
-    <div class="wrap main">
-      <div class="block-1"> <img src="{{asset('aset/images/page1-img1.jpg')}}" alt="" class="img-radius">
-        <div class="border-1">
-          <p class="color-1 p2">Security Systems for Home</p>
-          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet domingid quod mazim placerat.</p>
-          <a href="#" class="button top-1">Read More</a> </div>
-      </div>
-      <div class="block-1"> <img src="{{asset('aset/images/page1-img2.jpg')}}" alt="" class="img-radius">
-        <div class="border-1">
-          <p class="color-1 p2">Security Systems for Office</p>
-          <p>Facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-          <a href="#" class="button top-1">Read More</a> </div>
-      </div>
-      <div class="block-1"> <img src="{{asset('aset/images/page1-img3.jpg')}}" alt="" class="img-radius">
-        <div>
-          <p class="color-1 p2">Special Security Systems</p>
-          <p>Tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamc.</p>
-          <a href="#" class="button top-1">Read More</a> </div>
-      </div>
-    </div>
-    
-  </div>
-</header>
-<!--==============================content================================-->
-<section id="content">
-  <div>
-    <div class="wrap">
-      <div class="col-1 border-2">
-        <h2 class="p3">Who We Are?</h2>
-        <div class="wrap"> <img src="{{asset('aset/images/page1-img4.jpg')}}" alt="" class="img-indent img-radius">
-          <p class="extra-wrap">Security Group is one of free website templates created by TemplateMonster.com. This website template is optimized for 1280X1024 screen resolution. This Security Group Template goes with 2 packages – with PSD source files and without them. PSD source files are available for free for the registered members of TemplateMonster.com.</p>
-        </div>
-        <div class="wrap top-2">
-          <ul class="list-1 fleft">
-            <li><a href="#">Lorem ipsum dolor sit consetetur</a></li>
-            <li><a href="#">Sadipscing elitred diam nonumy eirmod</a></li>
-            <li><a href="#">Tempor invidunt labore dolore magna</a></li>
-            <li><a href="#">Aliquyam erat, sed diam volupt</a></li>
-          </ul>
-          
-          <ul class="list-1 fleft">
-            <li><a href="#">At vero eos et accusam et justo duo</a></li>
-            <li><a href="#">Dolores et ea rebum. stetasd gubergren</a></li>
-            <li><a href="#">Takimata sanctus est lorem</a></li>
-            <li><a href="#">Psum dolor sit amet orem ipsum</a></li>
-          </ul>
-        </div>
-        <a href="#" class="button-1 top-3">Read More</a> </div>
-      <div class="col-2">
-        <h2 class="p2">Latest News</h2>
-        <a href="#" class="link-2">29.02.2011</a>
-        <p class="p4">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</p>
-        <a href="#" class="link-2">27.02.2011</a>
-        <p class="p4">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
-        <a href="#" class="link-2">22.02.2011</a>
-        <p>Onvidunt ut labore dolore magna aliquym erat, sed diam voluptua vero eos accusam et justo duo dolores.</p>
-        <a href="#" class="button-1 top-1">Read More</a> </div>
-    </div>
-  </div>
-</section>
-<!--==============================footer=================================-->
-<footer>
-  <p>© 2012 <a href="#" class="link">Security Group</a> Website Template by <a target="_blank" href="http://www.templatemonster.com/" class="link">TemplateMonster.com</a></p>
-  <p>Phone: +1 800 559 6580 &nbsp; Email: <a href="#" class="link">info@security.com</a></p>
-</footer>
+
+    <body>
+        <!-- Header gallery -->
+        <center>
+        <font size="8" face="Courier New" color="black">
+        <h1><u><i class="fa fa-android" style="font-size:39px"></i>Aksesoris Handphone</u><i class="fa fa-android" style="font-size:39px"></i>
+        </h1></font>
+        @include('Partial.header')        
+
+            @include('Partial.nav')
+
+            <div class="row tm-row-margin-b tm-content-boxes-row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    
+                    <div class="tm-content-box">
+                        <i class="fa fa-4x fa-bicycle tm-content-icon"></i>
+                        <h2 class="tm-content-title">Mauris viverra ipsum</h2>
+                        <p>You can <strong>easily</strong> change <a rel="nofollow" href="http://fontawesome.io/icons/" target="_blank">Font Awesome icons</a> in HTML codes. Metro Fit is free HTML CSS web template from Templatemo.</p>
+                        <p>Vestibulum ante nibh, sagittis dapibus dui nec, dictum sagittis quam. Integer mollis augue nex eros iaculis, eget hendrerit tortor feugiat.</p>
+                        <p>Quisque eu lectus quis tortor efficitur sollicitudin at eu elit. Aliquam a sagittis lectus, semper porta.</p>    
+                    </div>
+                    
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    
+                    <div class="tm-content-box">
+                        <i class="fa fa-4x fa-camera tm-content-icon"></i>
+                        <h2 class="tm-content-title">Phasellus faucibus sem</h2>
+                        <p>Suspendisse condimentum aliquet lorem porta faucibus. Sed commodo lectus non purus scelerisque malesuada. Integer commodo vulputate leo. Nam quis tortor quis libero laoreet cursus.</p>
+                        <p>Proin volutpat luctus lacus, sollicitudin dictum orci vestibulum eu. Sed quis fringilla nulla. Vestibulum ante nibh, sagittis dapibus dui nex, dictum sagittis quam.</p>                        
+                    </div>
+                    
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    
+                    <div class="tm-content-box">
+                        <i class="fa fa-4x fa-street-view tm-content-icon"></i>
+                        <h2 class="tm-content-title">Lorem ipsum dolor</h2>
+                        <p>Curabitur hendrerit magna at enim iaculis, at porta nisl tempus. Fusce vitae magna non libero elementum blandit.</p>
+                        <p>Ut venenatis viverra dolor, sit amet blandit nisl eleifend ultrices. Nullam ex justo, posuere sed tortor eget, rhoncus gravida sem.</p>
+                        <p>Vivamus viverra semper felis a placerat. Duis et dapibus sapien, quis porttitor lacus.</p>    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="tm-testi">
+                        <img src="{{asset('assett/img/img-11-01.jpg')}}" alt="Image" class="img-fluid img-circle tm-testi-img">
+                        <div class="tm-testi-text-box">
+                            <p class="tm-testi-text">Quisque eu lectus quis tortor efficitur sollicitudin at eu elit. Aliquam a sagittis lectus, semper porta mauris. Duis ut dignissim dui. Nam tincidunt purus quis ultrices iaculis.</p>                            
+                        </div>
+                        <p class="tm-testi-sig">Quiseuq a nunc elit</p>
+                    </div>
+                </div>
+            </div> <!-- row -->
+
+            <div class="row tm-nav-2-row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    
+                </div>
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="tm-social-icons-container text-xs-center">
+                        <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="tm-social-link"><i class="fa fa-behance"></i></a>
+                        <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            @include('Partial.footer')
+
+            
+            
+        </div> <!-- container-fluid -->
+        
+        <!-- load JS files -->
+        <script src="{{asset('assett/js/jquery-1.11.3.min.js')}}"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="{{asset('assett/https://www.atlasestateagents.co.uk/javascript/tether.min.js')}}"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
+        <script src="{{asset('assett/js/bootstrap.min.js')}}"></script>             <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+        <script src="{{asset('assett/js/jquery.magnific-popup.min.js')}}"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script>     
+       
+            $(window).load(function(){
+                /* Gallery pop up
+                -----------------------------------------*/
+                $('.tm-header-gallery').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+                           
+            });
+
+        </script>             
+
 </body>
 </html>

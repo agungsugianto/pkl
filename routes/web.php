@@ -12,10 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('barang.index1');
-});
-Route::get('/home', function () {
-    return view('layouts.admin');
+    return view('welcome');
 });
 
 Auth::routes();
@@ -25,3 +22,4 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function () {
     Route::resource('barang', 'BarangController');
     Route::resource('kategori', 'KategoriController');
 });
+

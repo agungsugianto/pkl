@@ -56,7 +56,7 @@
                         @endif
 			  		</div>
 			  		<div class="form-group">
-			  			<button type="submit" class="btn btn-primary">Tambah</button>
+			  			<button type="submit" class="btn btn-primary">Edit</button>
 			  		</div>
 			  	</form>
 			  </div>
