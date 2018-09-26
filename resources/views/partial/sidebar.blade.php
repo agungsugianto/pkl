@@ -35,6 +35,14 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                <a href="{{route('kategori.index')}}" class="nav-link active">
+                  <i class="fa fa-newspaper-o nav-icon"></i>
+                  <b><p>Kategori</p></b>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
                 <a href="{{route('barang.index')}}" class="nav-link active">
                   <i class="nav-icon fa fa-mobile-phone" style="font-size:36px"></i>
                   <b><p>Barang</p></b>
@@ -43,9 +51,9 @@
             </ul>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('kategori.index')}}" class="nav-link active">
-                  <i class="fa fa-newspaper-o nav-icon"></i>
-                  <b><p>Kategori</p></b>
+                <a href="{{route('galeri.index')}}" class="nav-link active">
+                  <i class="fa fa-picture-o nav-icon"></i>
+                  <b><p>Galeri</p></b>
                 </a>
               </li>
             </ul>

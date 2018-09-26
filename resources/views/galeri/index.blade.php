@@ -4,8 +4,8 @@
 	<div class="container">
 		<div class="col-md-12">
 			<div class="panel panel-primary">
-			  <div class="panel-heading">Data Barang
-			  	<div class="panel-title pull-right"><a href="{{ route('barang.create') }}">Tambah</a>
+			  <div class="panel-heading">Data Galeri Universitas
+			  	<div class="panel-title pull-right"><a href="{{ route('galeri.create') }}">Tambah</a>
 			  	</div>
 			  </div>
 			  <div class="panel-body">
@@ -13,29 +13,25 @@
 				  <table class="table">
 				  	<thead>
 			  		<tr>
-						<th>No</th>
-						<th>Kategori</th>
-					  <th>Nama Barang</th>
-						<th>Harga</th>
-						<th>Foto</th>
+			  		<th>No</th>
+					  <th>Gambar</th>
+					  <th>Keterangan</th>
 					  <th colspan="3">Action</th>
 			  		</tr>
 				  	</thead>
 				  	<tbody>
 				  		<?php $nomor = 1; ?>
 				  		@php $no = 1; @endphp
-				  		@foreach($barangs as $data)
+				  		@foreach($galeris as $data)
 				  	  <tr>
-							<td>{{ $no++ }}</td>
-							<td><p> {{ $data->kategori->kategori }} </p></td>
-							<td><p>{{ $data->nama_barang }}</p></td>
-				    	<td><p>{{ $data->harga }}</p></td>
-							<td><img src="{{ asset('assetsss/dist/img/'.$data->foto.'')}}" width="70" height="70"></td>			    	
+				    	<td>{{ $no++ }}</td>
+				      <td><img src="{{ asset('assetsss/dist/img/'.$data->gambar.'')}}" width="70" height="70"></td>
+				    	<td><p>{{ $data->keterangan }}</p></td>			    	
 <td>
-	<a class="btn btn-success" href="{{ route('barang.edit',$data->id) }}">Edit</a>
+	<a class="btn btn-success" href="{{ route('galeri.edit',$data->id) }}">Edit</a>
 </td>
 <td>
-	<form method="post" action="{{ route('barang.destroy',$data->id) }}">
+	<form method="post" action="{{ route('galeri.destroy',$data->id) }}">
 		<input name="_token" type="hidden" value="{{ csrf_token() }}">
 		<input type="hidden" name="_method" value="DELETE">
 

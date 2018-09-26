@@ -10,16 +10,7 @@
 			  </div>
 			  <div class="panel-body">
 			  	<form action="{{ route('barang.store') }}" method="post" enctype="multipart/form-data">
-			  		{{ csrf_field() }}
-					  <div class="form-group {{ $errors->has('nama_barang') ? ' has-error' : '' }}">
-			  			<label class="control-label">Nama Barang</label>	
-			  			<input type="text" name="nama_barang" class="form-control"  required>
-			  			@if ($errors->has('nama_barang'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('nama_barang') }}</strong>
-                            </span>
-                        @endif
-			  		</div>
+					  {{ csrf_field() }}
 					  <div class="form-group {{ $errors->has('kategori_id') ? ' has-error' : '' }}">
 			  			<label class="control-label">Kategori</label>	
 			  			<select name="kategori_id" class="form-control">
@@ -33,7 +24,17 @@
                             </span>
                         @endif
 			  		</div>
-
+	
+					  <div class="form-group {{ $errors->has('nama_barang') ? ' has-error' : '' }}">
+			  			<label class="control-label">Nama Barang</label>	
+			  			<input type="text" name="nama_barang" class="form-control"  required>
+			  			@if ($errors->has('nama_barang'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('nama_barang') }}</strong>
+                            </span>
+                        @endif
+			  		</div>
+					 
 			  		<div class="form-group {{ $errors->has('harga') ? ' has-error' : '' }}">
 			  			<label class="control-label">Harga</label>	
 			  			<input type="text" name="harga" class="form-control"  required>

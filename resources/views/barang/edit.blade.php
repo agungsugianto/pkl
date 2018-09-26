@@ -13,16 +13,6 @@
 			  		<input name="_method" type="hidden" value="PATCH">
         			{{ csrf_field() }}
 
-			  		<div class="form-group {{ $errors->has('nama_barang') ? ' has-error' : '' }}">
-			  			<label class="control-label">Nama Barang</label>	
-			  			<input type="text" name="nama_barang" class="form-control" value="{{ $barangs->nama_barang }}"  required>
-			  			@if ($errors->has('nama_barang'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('nama_barang') }}</strong>
-                            </span>
-                        @endif
-			  		</div>
-
 					  <div class="form-group {{ $errors->has('kategori_id') ? ' has-error' : '' }}">
 			  			<label class="control-label">Kategori</label>	
 			  			<select name="kategori_id" class="form-control">
@@ -35,7 +25,18 @@
                                 <strong>{{ $errors->first('kategori_id') }}</strong>
                             </span>
                         @endif
+					  </div>
+					  
+			  		<div class="form-group {{ $errors->has('nama_barang') ? ' has-error' : '' }}">
+			  			<label class="control-label">Nama Barang</label>	
+			  			<input type="text" name="nama_barang" class="form-control" value="{{ $barangs->nama_barang }}"  required>
+			  			@if ($errors->has('nama_barang'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('nama_barang') }}</strong>
+                            </span>
+                        @endif
 			  		</div>
+
 
 			  		<div class="form-group {{ $errors->has('harga') ? ' has-error' : '' }}">
 			  			<label class="control-label">Harga</label>	
