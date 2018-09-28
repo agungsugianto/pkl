@@ -11,18 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.guest');
-});
-Route::get('about', function () {
-    return view('layouts.about');
-});
-Route::get('guest', function () {
-    return view('layouts.guest');
-});
-Route::get('gallery', function () {
-    return view('layouts.gallery');
-});
+
 
 Auth::routes();
 
@@ -35,6 +24,21 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function () {
 Route::get('blog','FrontController@blog');
 Route::get('blog/{id}', array('as' => 'singleblog', 'uses' =>'FrontController@singleblog'));
 
-
+//Frontend
 Route::resource('index','FrontendController');
-Route::get('/guest','FrontendController@barang')->name('barang');
+Route::get('/','FrontendController@barang')->name('barang');
+Route::get('/BLOG','FrontendController@view');
+Route::get('/BLOG/{barangs}','FrontendController@show')->name('BLOG');
+
+Route::get('/', function () {
+    return view('layouts.guest');
+});
+Route::get('about', function () {
+    return view('layouts.about');
+});
+Route::get('gallery', function () {
+    return view('layouts.gallery');
+});
+Route::get('Blogdetail', function () {
+    return view('layouts.Blogdetail');
+});

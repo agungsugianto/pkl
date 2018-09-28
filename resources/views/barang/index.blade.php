@@ -17,6 +17,7 @@
 						<th>Kategori</th>
 					  <th>Nama Barang</th>
 						<th>Harga</th>
+						<th>Deskripsi</th>
 						<th>Foto</th>
 					  <th colspan="3">Action</th>
 			  		</tr>
@@ -30,6 +31,7 @@
 							<td><p> {{ $data->kategori->kategori }} </p></td>
 							<td><p>{{ $data->nama_barang }}</p></td>
 				    	<td><p>{{ $data->harga }}</p></td>
+							<td><p>{!!str_limit($data->deskripsi)!!}</p></td>
 							<td><img src="{{ asset('assetsss/dist/img/'.$data->foto.'')}}" width="70" height="70"></td>			    	
 <td>
 	<a class="btn btn-success" href="{{ route('barang.edit',$data->id) }}">Edit</a>

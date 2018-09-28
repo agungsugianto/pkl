@@ -43,13 +43,15 @@ class BarangController extends Controller
             'nama_barang' => 'required',
             'kategori_id' => 'required',
             'harga' => 'required',
-            'foto' => 'required'
+            'foto' => 'required',
+            'deskripsi' => 'required'
         ]);
 
         $barangs = new barang;
         $barangs->nama_barang = $request->nama_barang;
         $barangs->kategori_id = $request->kategori_id;
         $barangs->harga = $request->harga;
+        $barangs->deskripsi = $request->deskripsi;
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $destinationPath = public_path().'/assetsss/dist/img/';
@@ -57,6 +59,8 @@ class BarangController extends Controller
             $uploadsucces = $file->move($destinationPath, $filename);
             $barangs->foto = $filename;
         }
+        $barangs->slug=str_slug($request->kategori,'-');
+
         $barangs->save();
         return redirect()->route('barang.index');
     }
@@ -100,12 +104,14 @@ class BarangController extends Controller
             'nama_barang' => 'required|max:255',
             'kategori_id' => 'required|',
             'harga' => 'required',
-            'foto' => 'required'
+            'foto' => 'required',
+            'deskripsi' => 'required|'
         ]);
         $barangs = barang::findOrFail($id);
         $barangs->nama_barang = $request->nama_barang;
         $barangs->kategori_id = $request->kategori_id;
         $barangs->harga = $request->harga;
+        $barangs->deskripsi = $request->deskripsi;
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $destinationPath = public_path().'/assetsss/dist/img/';

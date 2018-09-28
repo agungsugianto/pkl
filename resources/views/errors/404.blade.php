@@ -437,7 +437,7 @@ html {
             </svg>
   </div>
   <h1>
-            Maaf error silahkan klik<i><a href="/">&nbsp Ini</a></i>&nbsp untuk kembali (^.^)
+            Maaf error (^.^)
         </h1>
 </div>    <script type="text/javascript">
  // scale on resize

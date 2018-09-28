@@ -21,6 +21,8 @@ class CreateBarangsTable extends Migration
             ->onUpdate('cascade')->onDelete('cascade');
             $table->string('harga');
             $table->string('foto');
+            $table->text('deskripsi');
+            $table->string('slug');
             $table->timestamps();
         });
     }

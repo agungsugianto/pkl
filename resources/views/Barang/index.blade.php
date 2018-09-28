@@ -12,10 +12,12 @@
                     
                     @foreach($barangs as $data)
                         <div class="col-md-6">
-                        <center><p style="background: #4682B4;"><font size="8" face="Courier New" ><a class="nav-link" href="#">{{ $data->kategori->kategori }}</a></p>
+                        <center><p style="background: #4682B4;"><font size="8" face="Courier New" ><a class="posts-title" href="#">{{ $data->kategori->kategori }}</a></p>
                         <img src="{{ asset('assetsss/dist/img/'.$data->foto.'')}}" style="max-height:300px;max w"></font><br>
                         <u>{{ $data->nama_barang }}</u><br>
+                        {!!str_limit($data->deskripsi) !!}<br>
                         <p style="background: #B22222;"><font color="white">Rp.&nbsp{{ $data->harga }}</p></font><br><br></center>
+                        
                         </div> 
                         @endforeach
                         </section>
